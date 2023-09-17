@@ -7,12 +7,12 @@ pipeline{
 
         stage('compile'){
             steps{
-                sh 'mvn -f sysfoo/ compile'
+                sh 'mvn -f  compile'
             }
         }
         stage('clean and package'){
             steps{
-                sh 'mvn -f sysfoo/  clean package'
+                sh 'mvn -f  clean package'
             }
         }
     }
