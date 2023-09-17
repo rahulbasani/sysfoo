@@ -18,7 +18,7 @@ pipeline{
     }
     post {
         success {
-            archiveArtifacts artifacts: 'sysfoo/target/*.war', followSymlinks: false
+            archiveArtifacts artifacts: 'target/*.war', followSymlinks: false
         }
         failure {
             echo 'Please look again'
